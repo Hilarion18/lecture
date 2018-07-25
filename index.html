@@ -1,1 +1,200 @@
-index from dev versi 2
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>HTML TEST PAGE</title>
+  <style>
+    body {
+      margin: 0px;
+    }
+
+    #header {
+      background: #292929;
+    }
+
+    #header,
+    #header a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    #header a:hover {
+      color: #c5c5c5;
+    }
+
+
+    ul#headerMenu {
+      position: absolute;
+      left: 70px;
+      list-style: none;
+      padding: 0px;
+      margin: 0px;
+    }
+
+    ul#headerMenu li {
+      display: inline;
+      padding: 0px 7px;
+    }
+
+    #header button {
+      position: absolute;
+      right: 0px;
+    }
+
+    .centerVertical {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .wrapper {
+      position: relative;
+      max-width: 1024px;
+      margin: auto;
+    }
+
+    #videoArea {
+      background: #c5c5c5;
+      padding: 15px 0px;
+    }
+
+    .videoText {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      text-align: center;
+      width: 100%;
+      background: #ffffffd1;
+    }
+
+    #partner img {
+      height: 32px;
+      padding: 11px;
+    }
+
+    div#article {
+      display: table;
+    }
+
+    img.left {
+      padding: 1%;
+      float: left;
+      width: 48%;
+    }
+
+    .right {
+      float: right;
+      width: 48%;
+      padding: 1%;
+    }
+
+    #maps iframe {
+      width: 100%;
+    }
+
+    form#contactForm {
+      background: #5c9dff;
+      margin-top: 30px;
+      padding: 1px 0px 25px 0px;
+    }
+
+    label {
+      display: block;
+      padding: 5px 0px;
+      font-weight: 600;
+      color: #251f1fd1;
+    }
+
+    input[type="text"] {
+      width: 30%;
+      padding: 5px;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      font-size: 14px;
+    }
+
+    textarea {
+      width: 500px;
+      height: 130px;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      padding: 5px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id='header'>
+    <div class='wrapper'>
+      <img alt="hacktiv8_logo" src="https://hacktiv8.com/img/logo-hacktiv8_bordered--md5--f7ee5fc69819b5ef3849344c119f5e18.png"
+        style="height: 45px;" />
+      <ul id="headerMenu" class="centerVertical">
+        <li>About</li>
+        <li>
+          <a href='#maps'>Location</a>
+        </li>
+        <li>
+          <a href='#contactForm'>Contact</a>
+        </li>
+      </ul>
+      <button class='centerVertical'>Daftar Sekarang</button>
+    </div>
+  </div>
+  <div id='videoArea'>
+    <div class='wrapper'>
+      <video width="100%" autoplay muted>
+        <source src="assets/video.mp4" type="video/mp4"> Your browser does not support the video tag.
+      </video>
+      <div class='videoText'>
+        <h1>Menjadi Full Stack Web Developer Dalam 12 Minggu</h1>
+        <h3>Kelas Pemrograman Full Stack JavaScript Web Developer di Jakarta, Indonesia</h3>
+      </div>
+    </div>
+  </div>
+
+  <div id="contentArea">
+    <div class="wrapper">
+      <div id="partner">
+        <center>
+          <img alt="Image" src="https://hacktiv8.com/img/press-dailysocial--md5--db026bcf01e3b1cc8fb167a0477c9632.png">
+          <img alt="Image" src="https://hacktiv8.com/img/press-infokomputer--md5--f15841b9b8e92a685d7ed42891b4eed4.png">
+          <img alt="Image" src="https://hacktiv8.com/img/press-techinasia--md5--73f63cc1128ebc0a659f3b070ea97ee6.png">
+          <img alt="logo code politan" src="https://hacktiv8.com/img/press-codepolitan--md5--c6cd986bfb1be889708b672e982814e0.png">
+        </center>
+      </div>
+      <div id='article'>
+        <img class="left" alt="imageArticle" src="https://hacktiv8.com/img/covers/home_banner_upper--md5--7f091ceb9b0fd04b706820e565a11865.jpg">
+        <div class="right">
+          <h3>HACKTIV8 Coding Bootcamp</h3>
+          <p>
+            HACKTIV8 adalah program pembelajaran Full Stack JavaScript immersive pertama di Indonesia. Kurikulum kami dirancang untuk
+            membangun keahlian yang dapat diaplikasikan pada perkembangan dunia teknologi terkini.
+          </p>
+          <a href="https://hacktiv8.com/fullstack/silabus/">Lihat Silabus</a>
+        </div>
+      </div>
+      <div id="maps">
+        <h3>Location</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.0228619079257!2d106.77942751464644!3d-6.260718695468388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1a8713ce207%3A0x2c3ea1f4a28bfac5!2sHacktiv8+Indonesia!5e0!3m2!1sen!2sid!4v1532485674176"
+          width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <form id="contactForm" action="#">
+    <div class="wrapper">
+      <h3>Hubungi Kami</h3>
+      <label>Email Anda</label>
+      <input type="text" name="email" placeholder="email anda" />
+      <label>Pesan</label>
+      <textarea name="message"></textarea>
+      <div>
+        <input type="submit" value="Kirim Pesan" />
+      </div>
+    </div>
+  </form>
+</body>
+
+</html>
